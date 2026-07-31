@@ -3,7 +3,7 @@ let yesBtn = document.getElementById("yesBtn");
 let yesScale = 1;
 function dodge(){   
     noBtn.style.position = 'absolute';
-    noBtn.style.left = rand() + 'px';
+    noBtn.style.left = rand() + 'rem';
     yesScale += 0.07;
     yesBtn.style.transform = `scale(${yesScale})`;
 }
@@ -11,7 +11,7 @@ noBtn.addEventListener("mouseenter", dodge);
  
 
 function rand(){
-    return Math.random() * 300;
+    return Math.random() * 30;
 }
 
 function rainHearts() {

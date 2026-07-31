@@ -6,8 +6,8 @@ body{
     background-color: beige; 
 }
 .container{
-    margin: 100px 600px;
-    padding: 20px;
+    margin: 6.25rem 37.5rem;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ body{
 .window{
     border: 5px solid 
     var(--coral);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     background-color: wheat;
 }
 .btn--no{
@@ -43,8 +43,13 @@ body{
 .heart{
     position: fixed;
     top: -30px;
-    font-size: 30px;
-    animation: fall 1s linear forwards;
+    font-size: 1.8rem;
+    animation: fall 3s linear forwards;
+}
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem 3rem;
+    }
 }
 
 @keyframes fall {
@@ -52,6 +57,6 @@ body{
         transform: translateY(0);
     }
     to {
-        transform: translateY(110vh);
+        transform: translateY(300vh);
     }
 }
