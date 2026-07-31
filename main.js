@@ -25,7 +25,6 @@ function rainHearts() {
         heart.addEventListener("animationend", () => {
             heart.remove();
         });
-        heart.style.fontSize = Math.random() * 25 + 15 + "px";
     }
 }
 
