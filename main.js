@@ -33,6 +33,6 @@ function rainHearts() {
 let title = document.querySelector(".title");
 
 yesBtn.onclick = () => {
-    title.textContent = 'Yippeeee!';
+    title.textContent = 'Yaaappyyy!';
     rainHearts();
 }
