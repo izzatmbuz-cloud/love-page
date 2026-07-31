@@ -7,8 +7,17 @@ function dodge(){
     yesScale += 0.07;
     yesBtn.style.transform = `scale(${yesScale})`;
 }
-noBtn.addEventListener("mouseenter", dodge);
- 
+const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+if (isTouchDevice) {
+    noBtn.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        dodge();
+    });
+} else {
+    noBtn.addEventListener("mouseenter", dodge);
+}
 
 function rand(){
     return Math.random() * 30;
