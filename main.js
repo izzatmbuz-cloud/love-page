@@ -1,9 +1,10 @@
-let noBtn = document.getElementById("noBtn");
-let yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
 let yesScale = 1;
 function dodge(){   
     noBtn.style.position = 'absolute';
-    noBtn.style.left = rand() + 'rem';
+    noBtn.style.left = Math.random() * 80 + "vw";
+    noBtn.style.top = Math.random() * 80 + "vh";
     yesScale += 0.07;
     yesBtn.style.transform = `scale(${yesScale})`;
 }
@@ -17,10 +18,6 @@ if (isTouchDevice) {
     });
 } else {
     noBtn.addEventListener("mouseenter", dodge);
-}
-
-function rand(){
-    return Math.random() * 30;
 }
 
 function rainHearts() {
@@ -38,7 +35,7 @@ function rainHearts() {
 }
 
 
-let title = document.querySelector(".title");
+const title = document.querySelector(".title");
 
 yesBtn.onclick = () => {
     title.textContent = 'Yaaappyyy!';
