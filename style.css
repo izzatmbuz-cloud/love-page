@@ -31,12 +31,14 @@ body{
     background-color: green;
     border: 2px solid darkgreen;
     border-radius: 5px;
+    cursor: pointer;
 }
 #noBtn{
     padding: 5px 10px;
     background-color: #e23b4e;
     border: 2px solid red;
     border-radius: 5px;
+    cursor: pointer;
 }
 .heart{
     position: fixed;
