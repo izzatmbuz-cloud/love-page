@@ -8,7 +8,7 @@ function dodge(){
     yesBtn.style.transform = `scale(${yesScale})`;
 }
 noBtn.addEventListener("mouseenter", dodge);
-
+ 
 
 function rand(){
     return Math.random() * 300;
@@ -21,7 +21,11 @@ function rainHearts() {
         heart.textContent = "❤️";
         document.body.appendChild(heart);
         heart.style.left = Math.random() * window.innerWidth + "px";
-        heart.style.animationDelay = Math.random() * 2 + "s"
+        heart.style.animationDelay = Math.random() * 2 + 2 + "s";
+        heart.addEventListener("animationend", () => {
+            heart.remove();
+        });
+        heart.style.fontSize = Math.random() * 25 + 15 + "px";
     }
 }
 
