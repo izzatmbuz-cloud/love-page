@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{    
+    background-color: beige;
+}
+.container{
+    margin: 100px 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+:root{
+    --coral: #d97b73;
+    --red: #e23b4e;
+}
+.window{
+    border: 5px solid 
+    var(--coral);
+    border-radius: 12px;
+    background-color: wheat;
+}
+.btn--no{
+    position: relative;
+    transition: 
+        left .18s, top .18s;
+}
+#yesBtn{
+    padding: 5px 10px;
+    background-color: green;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+}
+#noBtn{
+    padding: 5px 10px;
+    background-color: #e23b4e;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.heart{
+    position: fixed;
+    top: -30px;
+    font-size: 30px;
+    animation: fall 1s linear forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(110vh);
+    }
+}
